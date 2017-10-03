@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>zelaer-决策助手</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="js/ylg_bootstrap/css/bootstrap.css">
+      <link rel="stylesheet"  href="css/ylg_main.css">
+  </head>
+  <body>
+     <!-- 通顶区域 -->
+         <header id='header'>
+               <div class="container">
+                   <div class="row">
+                     <div class="col-xs-2">
+                          <a href="index.html"><img src="img/ylg/logo.png" height="30" width="130" alt=""></a>
+                     </div>
+                     <div class="col-xs-5">
+                        <a href="index.html">首页</a>
+                        <a href="">机型列表</a>
+                        <a href="">专题</a>
+                        <a href="">实验室</a>
+                     </div>
+                     <div class="col-xs-3">
+                        <input type="text" placeholder='搜索手机或专题'>
+                     </div>
+                     <div class="col-xs-2">
+                       <a href="cmh-login.html">登陆</a>
+                       <a href="cmh-login.html">注册</a>
+                     </div>
+                   </div>
+               </div>
+         </header>
+       
+     <!-- 轮播图  -->
+     <div id="banner" >
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+             <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active" style="background-image: url('img/ylg/b-1.png') "></div>
+              <div class="item" style="background-image: url('img/ylg/b-2.jpg')"></div>
+           <div class="item" style="background-image: url('img/ylg/b-3.jpg')"></div>
+             <div class="item" style="background-image: url('img/ylg/b-4.jpg')"></div>
+         </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+     </div>
+
+      <!-- 三级菜单 -->
+      <div class="sidebar">
+              <ul class="left_list">
+                  <li class='clear'><a href="" class="title">ZEALER 出品</a>
+                      <div class="list_child">
+                          <a href="">一加手机3  </a>
+                          <a href="">测评HTC10</a>
+                          <a href="">测评红米Pro </a>
+                          <a href="">简评华为荣耀8 </a>
+                      </div>
+                  </li>
+                  <li class='clear' id="js_clear">
+                       <a href="" class="title">手机</a>
+                            <div class="list_child">
+                              <a href="">Apple/苹果</a>
+                              <a href="">SAM/三星</a>
+                              <a href="">一加3 </a>
+                              <a href="">魅族 Pro6 </a>
+                           </div>
+                       <ul class="list_ul " >
+                           <li class="data-num-1">苹果
+                               <!-- <ul class="da3disp da3-1">                
+                                    <li><a href="">iPhone 7 Plus</a></li>
+                                    <li><a href="">iPhone 7</a></li>
+                                    <li><a href="">iPhone SE</a></li>
+                                    <li><a href="">iPhone 5</a></li>
+                                    <li><a href="">iPhone 6 Plus</a></li>
+                                    <li><a href="">iPhone 5c</a></li>
+                                    <li><a href="">iPhone 5s</a></li>
+                                    <li><a href="">iPhone 6s</a></li>
+                                    <li><a href="">iPhone 6</a></li>
+                               </ul> -->
+                           </li>
+                           <li class="data-num-1">三星</li>
+                           <li class="data-num-1">华为</li>
+                           <li class="data-num-1">vivo</li>
+                           <li class="data-num-1">oppo</li>
+                           <li class="data-num-1">魅族</li>
+                           <li class="data-num-1">一加</li>
+                           <li class="data-num-1">锤子</li>
+                           <li class="data-num-1">LG</li>
+                           <li class="data-num-1">金立</li>
+                           <li class="data-num-1">努比亚</li>
+                           <li class="data-num-1">酷派</li>
+                           <li class="data-num-1">360</li>
+                           <li class="data-num-1">zuk</li>
+                           <li class="data-num-1">ASUS</li> 
+                          <li class="data-num-1">联想</li> 
+                           
+                       </ul>
+                      
+                      <!--   <ul class="da3disp da3-4">                
+                                    <li><a href="">iPhone 7 Plus</a></li>
+                                    <li><a href="">iPhone 7</a></li>
+                                    <li><a href="">iPhone SE</a></li>
+                                    <li><a href="">iPhone 5</a></li>
+                                    <li><a href="">iPhone 6 Plus</a></li>
+                                    <li><a href="">iPhone 5c</a></li>
+                                    <li><a href="">iPhone 5s</a></li>
+                                    <li><a href="">iPhone 6s</a></li>
+                                    <li><a href="">iPhone 6</a></li>
+                        </ul> -->
+
+
+                  </li>
+                  <li class='clear'><a href="" class="title">测评专题</a>
+                        <div class="list_child">
+                          <a href="">全部专题</a>
+                          <a href="">手机探秘&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                          <a href="">见机‘拆’机 </a>             
+                      </div>
+                  </li>
+                  <li class='clear'><a href="" class="title">ZEALER LAB</a>
+                       <div class="list_child">
+                          <a href="">简介</a>
+                          <a href="">检测&资讯</a>                   
+                      </div>
+                  </li>
+              </ul>
+      </div>
+
+     <!-- 热门机型 -->
+       <div class="warp">
+        <div class="content">
+           <p>热门机型</p>
+             <div class="hot"></div>
+             <p>手机揭秘</p>
+             <div class="secret_one"></div>
+             <div class="secret_two"></div>
+        </div>
+    </div>
+     <!-- 手机探秘 -->
+     <!-- foot -->
+     <footer class='container'>      
+          <div class="footerr"></div>
+    </footer>
+    <div class="return" id="js_return"></div>
+ <script src="js/ylg_jquery/jquery.js"></script>
+  <script src="js/ylg_bootstrap/js/bootstrap.js"></script>
+  <script src="js/ylg_main.js"></script>
+  </body>
+</html>

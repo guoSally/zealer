@@ -1,0 +1,580 @@
+/************************common***************************/
+	body,p,dd{margin:0;}
+	ul,li{padding: 0; list-style: none;margin:0;}
+	.left{
+		float:left;
+	}
+/****************************Header***********************/
+	header{
+			max-width:100%;
+			height:100px;
+			background: #000;
+			color:white;
+			display:flex;
+			justify-content:space-around;
+
+		}
+	#hd_l_s{
+		width:48px;
+		height:44px;
+		background: #fff;
+		background:url("../img/zlj/ZEALER_s.png") 
+		no-repeat 16px -118px;
+		background-size:65px;
+		float:left;
+	}
+	#hd_l_b{
+		width:80px;
+		height:50px;
+		margin-top: 26px;
+		margin-left: 28px;
+		background:url("../img/zlj/ZEALER_b.png")
+		no-repeat ;
+		background-size:180px 540px;
+		padding-left:70px;
+		cursor:pointer;
+	}
+	header ul li{
+		width: 100px;
+		height:100px;
+		float:left;
+		text-align: center;
+		vertical-align: center;
+	}
+	header ul li a span{
+		display: block;
+		font-weight: 700;
+		font-size: 14px;
+		color:white;
+	}
+	header ul li a{
+		display:inline-block;
+		padding-top:28px;
+		color:rgba(255,255,255,.8);	
+		text-decoration: none;
+	}
+	header .active {
+		background: #fff;
+	}
+	header .active a,header .active span{
+		color:#000;
+	}
+	header ul li:hover a{
+		color:white;
+		font-weight: 800;	
+	}
+	header ul .active:hover a{
+		color:black;
+		font-weight: 700;
+	}
+	#hd_r{
+		width:258px;
+		height:28px;
+		margin-top: 40px;
+		float:right;
+		position: relative;
+	}
+	#hd_r a{
+		color:white;
+		text-decoration: none;
+	}
+	#hd_r input{
+		color: #fff;
+		width: 120px;
+		height: 28px;
+		padding: 4px 0;
+		margin-left: 10px;
+		background-color: #2b2b2b;
+		border-bottom-left-radius: 2px;
+		border-top-left-radius: 2px;
+		box-sizing: border-box;
+		float: left;
+		border:0px;
+		border-radius: 20px;
+		outline: none;
+		padding-left:40px;
+	}
+	input:focus{
+		border:0;
+	}
+	#search{
+		width:18px;
+		height:22px;
+		position: absolute;
+		// background:url("../img/zlj/zealer_b.png") 
+		// no-repeat -147px -184px;
+		// background-size:160px auto;
+		left:14px;
+		top:3px;
+	}
+	#login{
+		width:60px;
+		height:30px;
+		float:right;
+		color:white;
+		text-decoration: none;
+		margin-top:14px;
+		font-size:11px;
+		text-align:center;
+	}
+	#fixed_div{
+		width:100%;
+		height:44px;
+		display:none;
+	}
+/***************************banner********************/ 
+	.banner{
+		min-width:1000px;
+		height:465px;
+		background:#0a0a0a;
+		padding:10px 0;
+		display:flex;
+		// flex-wrap:nowrap;
+		justify-content: center;
+		margin:auto;
+	}
+	.banner .ban_left img{
+		width:660px;
+		height:465px;
+		cursor:pointer;
+	}
+
+		
+		.banner .ban_left>div{
+			cursor:pointer;
+			background:pink;
+			opacity: 0.4;
+			position:absolute;
+			left:0;
+			top:0;
+		}
+
+
+		.banner .ban_left:hover::before{
+			content:"";
+			width:660px;
+			height:465px;
+			cursor:pointer;
+			display:block;
+			box-shadow: inset 0 0 180px rgba(0, 0, 0, 0.4);
+			-webkit-box-shadow: inset 0 0 180px rgba(0, 0, 0, 0.4);
+			-ms-box-shadow: inset 0 0 180px rgba(0, 0, 0, 0.4);
+			-moz-box-shadow: inset 0 0 180px rgba(0, 0, 0, 0.4);
+			transition: box-shadow 0.2s ease;
+			-webkit-transition: box-shadow 0.2s ease;
+			-ms-transition: box-shadow 0.2s ease;
+			-moz-transition: box-shadow 0.2s ease;
+			opacity: .4;
+			position:absolute;
+			left:0;
+			top:0;
+		}
+		.banner .ban_left{
+			// float:left;
+			margin-right:5px;
+			position:relative;
+		}
+
+
+
+
+
+	// .banner .ban_left{
+	// 	// float:left;
+	// 	margin-right:5px;
+	// }
+	.banner .ban_right{
+		width: 555px;
+		// float:left;
+	}
+
+
+	.banner .ban_right>div{
+		position:relative;
+	}
+	.banner .ban_right>div:hover::before{
+		content:"";
+		width: 555px;
+		height: 230px;
+		cursor:pointer;
+		display:block;
+		box-shadow: inset 0 0 180px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: inset 0 0 180px rgba(0, 0, 0, 0.4);
+		-ms-box-shadow: inset 0 0 180px rgba(0, 0, 0, 0.4);
+		-moz-box-shadow: inset 0 0 180px rgba(0, 0, 0, 0.4);
+		transition: box-shadow 0.2s ease;
+		-webkit-transition: box-shadow 0.2s ease;
+		-ms-transition: box-shadow 0.2s ease;
+		-moz-transition: box-shadow 0.2s ease;
+		opacity: .4;
+		position:absolute;
+		left:0;
+		top:0;
+	}
+
+
+
+	.banner .ban_right img{
+		width: 555px;
+		height: 230px;
+		cursor:pointer;
+	}
+/**************************NEWS_1 TITLE***********************/ 
+.news_1_title{background: #eceff1;}
+.news_1_title p{
+	font-size: 20px;
+	line-height: 60px;
+	text-align: left;
+	color: #000;
+	font-weight: 600;
+	max-width:1220px;
+	margin:0 auto;
+}
+.news_1_title span{
+	display:inline-block;
+	width:60px;
+	height:15px;
+	font-size:8px;
+	font-weight:200;
+	border:1px solid grey;
+	border-radius:10px;
+	text-align:center;
+	line-height: 15px;
+}
+/*****************NEWS_1*******************/ 
+.news_1{
+	min-width:1000px;
+	display:flex;
+	justify-content:center;
+	background: #eceff1;
+	padding:15px;
+}
+.div1{
+	width:254px;
+	height:125px;
+	color:white;
+	padding:20px;
+}
+.div1 p{
+	width:100%;
+}
+.div1 p:first-child{
+	height:60px;
+	line-height:60px;
+}
+.news_1 li:first-child{
+	background-image:linear-gradient(-75deg,#445570,#9caabc);
+	background-image:-webkit-linear-gradient(-75deg,#445570,#9caabc);
+}
+.news_1 li:nth-of-type(2){
+	background-image:linear-gradient(-75deg,#483dda,#8a8cef);
+	background-image:-webkit-linear-gradient(-75deg,#483dda,#8a8cef)
+}
+.news_1 li:nth-of-type(3){
+	background-image:linear-gradient(-75deg,#1f2026,#51545b);
+	background-image:-webkit-linear-gradient(-75deg,#1f2026,#51545b)
+}
+.news_1 li:nth-of-type(4){
+	background-image:linear-gradient(-75deg,#1aacff,#99e7ff);
+	background-image:-webkit-linear-gradient(-75deg,#1aacff,#99e7ff);
+	margin-right:0;
+}
+.divz img{
+	cursor:pointer;
+}
+.div1 p:last-child{
+	font-size:8px;
+	font-weight:100;
+	line-height:17px;
+}
+.div1 p span:first-child{
+	font-size:20px;
+	font-weight:700;
+	float:left;
+	cursor:pointer;
+}
+.div1 p span:last-child{
+	font-size:8px;
+	font-weight:100;
+	float:right;
+	cursor:pointer;
+}
+.divz{
+	padding:0 10px 0px 10px;
+	background:#fefff4 ;
+	border:1px solid #cfcfd1;
+	border-top: transparent;
+	width:262px;
+}
+.divz>div{
+	width:261.5px;
+	height:175px;
+	border-bottom:10px solid #fefff4;
+}
+li{
+	width:284px;
+	float:left;	
+	margin-right:25px;
+} 
+li>div{
+	display:inline-block;
+}
+li>div img{
+	width:100%;
+}
+/**************************NEWS_2************************/ 
+.news_2{
+	min-width:1000px;
+	padding:30px 15px;
+	display:flex;
+	justify-content:center;
+	background: #eceff1;
+	padding-bottom: 0px;
+}
+#radio{
+	min-width:1000px;
+	height:104px;
+	position:relative;
+	background:#eceff1;
+	left:0;
+	top:0;
+}
+#radio>span:hover{
+	background: #333;
+}
+#radio span{
+	display:inline-block;
+	width:148px;
+	height:35px;
+	background:black;
+	color:white;
+	text-align:center;
+	line-height:35px;
+	border-radius:30px;
+	left:50%;
+	top:50%;
+	position:absolute;
+	transform:translateX(-50%) translateY(-50%);
+}
+.news_2 li{
+	margin-right:25px;
+}
+.news_2 li:first-child{
+	background-image:linear-gradient(-75deg,#8d6a40,#dcc995);
+	background-image:-webkit-linear-gradient(-75deg,#8d6a40,#dcc995)
+}
+.news_2 li:nth-of-type(2){
+	background-image:linear-gradient(-75deg,#e15a2a,#ffa76d);
+	background-image:-webkit-linear-gradient(-75deg,#e15a2a,#ffa76d)
+}
+.news_2 li:nth-of-type(3){
+	background-image:linear-gradient(-75deg,#ffaf00,#ffea00);
+	background-image:-webkit-linear-gradient(-75deg,#ffaf00,#ffea00)
+}
+.news_2 li:nth-of-type(4){
+	background-image:linear-gradient(-75deg,#1aacff,#99e7ff);
+	background-image:-webkit-linear-gradient(-75deg,#1aacff,#99e7ff);
+	margin-right:0;
+}
+
+
+/*********************FOOTER********************/ 
+ footer{
+// 	width:100%;
+	// height:344.25px;
+	background: #000;
+	color:white;
+	padding:60px;
+}
+footer>div>dl{
+	float:left;
+	margin-bottom:5px;
+}
+footer>div>dl:first-child p{
+	display:inline-block;
+	width:101px;
+	height:36px;
+	background:url(../img/zlj/zealer_b.png)
+	no-repeat ;
+	background-position:-1px -617px;
+	background-size:250px 750px;
+}
+footer>div:first-child{
+	min-width:1000px;
+	display:flex;
+	justify-content: space-between;
+	border-bottom:1px solid #333;
+	margin:0 auto;
+}
+footer dl{
+	font-size:16px;
+}
+footer dd{
+	width:111px;
+	height: 30px;
+    font-size: 14px;
+    line-height: 43px;
+    color: #999;
+    cursor:pointer;
+}
+#gf_img{
+	margin-top:7px;
+	height:123px;
+	background:url("../img/zlj/01.png")
+	no-repeat;
+}
+#xz_img{
+	margin-top:7px;
+	height:123px;
+	background:url("../img/zlj/02.png")
+	no-repeat;
+}
+footer dl:last-child{
+	margin-top:53px;
+}
+#copyr_1{
+	min-width:1000px;
+	margin:24px auto;
+	line-height:33px;
+}
+#copyr_1>div{
+	float:right;
+	line-height:33px;
+}
+#copyr_1 a{
+	display:block;
+	height:16.25px;
+	color:#666;
+	font-size:12px;
+	text-decoration:none;
+}
+#copyr_1 div:nth-of-type(1) img{
+	width: 80px;
+	height: 33px;
+	display:block;
+}
+#copyr_1 div:nth-of-type(3) img{
+	width: 317px;
+	height: 12px;
+	display:inline-block;
+}
+#copyr_2{
+	width:100%;
+	margin:24px auto;
+}
+#copyr_2>div{
+	text-align:center;
+	height:16px;
+	font-size:9px;
+	color:#878787;
+}
+#copyr_2 img{
+	width:112px;
+	height:16px;
+}
+#retn1,#retn2{
+	display:block;
+	width:40px;
+	height:40px;
+	position:fixed;
+	right:0;
+	bottom:100px;
+	background:url(../img/zlj/retn.png);
+	display:none;
+}
+
+
+
+
+
+/***********************媒体查询***********************/ 
+	@media screen and (min-width: 1000px){
+		header #hd_l_s{
+				display:none;
+		}
+		#login{
+				display:none;
+		}
+		#copyr_2{
+				display:none;
+		}
+		body{
+			overflow-x:hidden; 
+		}
+	}
+
+	@media screen and (min-width:800px) 
+	and (max-width:999px){
+		body{
+			overflow-x:hidden; 
+		}
+		header #hd_l_s{
+			display:none;
+		}
+		header #hd_r{
+			width:80px;
+		}
+		header #hd_r input{
+			display:none;
+		}
+		header #search{
+			display:none;
+		}
+		#login{
+			display:none;			
+		}
+		#copyr_2{
+			display:none;
+		}
+	}
+	@media screen and (max-width:799px){
+		body{
+			overflow-x:hidden; 
+		}
+		header{
+			width:100%;
+			height:44px;
+			position:fixed;
+			left:0;
+			top:0;
+			z-index: 1;
+		}
+		header #hd_l_s{
+			display:block;
+		}
+		header #hd_l_b{
+			padding:0;
+			margin-top:14px;
+			width:60px;
+			height:14px;
+			background:url("../img/zlj/zealer_b.png") 
+			no-repeat ;
+			background-size:80px auto;
+		}
+		#hd_r{
+			display:none;
+		}
+		header #login{
+			display:block;
+		}
+		header ul{
+			display:none;
+		}
+		#fixed_div{
+			display:block;
+		}
+		.banner{
+			border-top:1px solid white;
+
+		}
+		#copyr_1{
+			display:none;
+		}
+		footer{
+			height:80px;
+			padding:20px;
+		}
+		footer>div:first-child{
+			display:none;
+		}
+	}

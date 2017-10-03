@@ -1,0 +1,16 @@
+html{
+	font:12px arial,'微软雅黑';
+}
+body,ul,h3,p{
+	margin: 0;
+	padding: 0;	
+}
+body{
+	overflow-x: hidden;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}

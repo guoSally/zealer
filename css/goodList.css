@@ -1,0 +1,636 @@
+.rephone_banner .goods {
+    background-color: #fff;
+    padding: 40px 0 20px;
+    background-size: cover
+}
+
+.rephone_banner .goods .goods_inner {
+    width: 1120px;
+    margin: 0 auto
+}
+
+.rephone_banner .goods .goods_inner .item {
+    padding: 0;
+    margin-bottom: 20px
+}
+
+.rephone_banner .goods .goods_inner .item .inner img {
+    width: 100%
+}
+
+.rephone_banner .goods .goods_inner .item .inner .hide_img {
+    display: none
+}
+
+.rephone_banner .goods .goods_inner .item .inner:hover {
+    box-shadow: 2px 2px 8px 0 rgba(177, 177, 177, .4);
+    -webkit-box-shadow: 2px 2px 8px 0 rgba(177, 177, 177, .4);
+    -ms-box-shadow: 2px 2px 8px 0 rgba(177, 177, 177, .4);
+    -moz-box-shadow: 2px 2px 8px 0 rgba(177, 177, 177, .4);
+}
+
+.rephone_banner .goods .goods_inner .item .inner:hover img {
+    display: none
+}
+
+.rephone_banner .goods .goods_inner .item .inner:hover .hide_img {
+    display: block
+}
+
+.rephone_goodsList {
+    padding: 70px 0;
+    text-align: center;
+    background: #F7F7F7
+}
+
+.rephone_goodsList .title {
+    font-size: 26px;
+    color: #474747;
+    margin-bottom: 20px
+}
+
+.rephone_goodsList .nav {
+    float: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+}
+
+.rephone_goodsList .nav li {
+    float: left;
+    margin-right: 10px
+}
+
+.rephone_goodsList .nav li.active a {
+    border-radius: 26px;
+    border: 1px solid #00BF92;
+    color: #00BF92
+}
+
+.rephone_goodsList .nav a {
+    position: relative;
+    color: #474747;
+    padding: 2px 12px;
+    border: 1px solid #F7F7F7
+}
+
+.rephone_goodsList .nav a:hover,
+.rephone_goodsList .nav a:focus {
+    color: #00BF92;
+    background: 0
+}
+
+.rephone_goodsList .good_list {
+    width: 1120px;
+    margin: 0 auto;
+    margin-top: 60px
+}
+
+.rephone_goodsList .good_list .row .item {
+    padding: 8px
+}
+
+.rephone_goodsList .good_list .row .inner {
+    box-shadow: 4px 4px 10px 0 rgba(175, 175, 175, .2);
+    -webkit-box-shadow: 4px 4px 10px 0 rgba(175, 175, 175, .2);
+    -ms-box-shadow: 4px 4px 10px 0 rgba(175, 175, 175, .2);
+    -moz-box-shadow: 4px 4px 10px 0 rgba(175, 175, 175, .2);
+    background: #f7f7f7;
+    position: relative;
+    display: block;
+    color: #575d6a;
+    border-radius: 4px;
+}
+
+.rephone_goodsList .good_list .row .inner .img_w {
+    padding: 15px 20% 0
+}
+
+.rephone_goodsList .good_list .row .inner p {
+    padding: 10px;
+    font-size: 16px
+}
+
+.rephone_goodsList .good_list .row .inner .hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(-180deg, #00bf92 11%, #006189 100%);
+    box-shadow: 0 2px 4px 0 #1E8F84;
+    -webkit-box-shadow: 0 2px 4px 0 #1E8F84;
+    -ms-box-shadow: 0 2px 4px 0 #1E8F84;
+    -moz-box-shadow: 0 2px 4px 0 #1E8F84;
+    border-radius: 2px;
+    padding: 0;
+}
+
+.rephone_goodsList .good_list .row .inner .hover .hover_inner {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+}
+
+.rephone_goodsList .good_list .row .inner .hover .hover_inner img {
+    width: 116px
+}
+
+.rephone_goodsList .good_list .row .inner .hover .hover_inner p {
+    color: #fff;
+    padding: 0;
+    padding-top: 20px;
+    font-size: 18px
+}
+
+.rephone_goodsList .good_list .row .inner .hover .hover_inner .price {
+    color: #FFBA9A;
+    font-size: 20px;
+    padding-bottom: 14px;
+    padding-top: 2px
+}
+
+.rephone_goodsList .good_list .row .inner .hover .hover_inner .buy {
+    color: #d5fff5;
+    opacity: .5;
+    text-decoration: underline;
+    font-size: 14px;
+    padding-top: 0;
+    letter-spacing: 2px
+}
+
+.rephone_goodsList .good_list .row .inner:hover .hover {
+    display: block
+}
+
+.rephone_goodsList .good_list .row img {
+    width: 100%
+}
+
+.rephone_goodsList.tab_DIY .nav li.active a {
+    border-color: #70C2FF;
+    color: #70C2FF
+}
+
+.rephone_goodsList.tab_DIY .nav a:hover {
+    color: #70C2FF
+}
+
+.rephone_goodsList.tab_DIY .good_list .inner .hover {
+    background-image: linear-gradient(-180deg, #3cd8b4 0, #0674cf 100%);
+    box-shadow: 0 2px 4px 0 #1D80C9;
+    -webkit-box-shadow: 0 2px 4px 0 #1D80C9;
+    -ms-box-shadow: 0 2px 4px 0 #1D80C9;
+    -moz-box-shadow: 0 2px 4px 0 #1D80C9;
+}
+
+.rephone_goodsList.tab_DIY .good_list .inner .hover .hover_inner .price {
+    color: #FFBA9A
+}
+
+.rephone_goodsList.tab_DIY .good_list .inner .hover .hover_inner .buy {
+    color: #d6e9fb
+}
+
+.rephone_goodsList.tab_NEW .nav li.active a {
+    border-color: #FF8B6F;
+    color: #FF8B6F
+}
+
+.rephone_goodsList.tab_NEW .nav a:hover {
+    color: #FF8B6F
+}
+
+.rephone_goodsList.tab_NEW .good_list .inner .hover {
+    background-image: linear-gradient(-180deg, #ff8b6f 0, #ffa962 100%);
+    box-shadow: 0 2px 4px 0 #FAA065;
+    -webkit-box-shadow: 0 2px 4px 0 #FAA065;
+    -ms-box-shadow: 0 2px 4px 0 #FAA065;
+    -moz-box-shadow: 0 2px 4px 0 #FAA065;
+}
+
+.rephone_goodsList.tab_NEW .good_list .inner .hover .hover_inner .price {
+    color: #7F3B1B
+}
+
+.rephone_goodsList.tab_NEW .good_list .inner .hover .hover_inner .buy {
+    color: #ffe7e1
+}
+
+.rephone_goodsList.tab_PARTS .nav li.active a {
+    border-color: #FFC26B;
+    color: #FFC26B
+}
+
+.rephone_goodsList.tab_PARTS .nav a:hover {
+    color: #FFC26B
+}
+
+.rephone_goodsList.tab_PARTS .good_list .inner .hover {
+    background-image: linear-gradient(-180deg, #ffc26b 0, #ffa56b 100%);
+    box-shadow: 0 2px 4px 0 #FAA76A;
+    -webkit-box-shadow: 0 2px 4px 0 #FAA76A;
+    -ms-box-shadow: 0 2px 4px 0 #FAA76A;
+    -moz-box-shadow: 0 2px 4px 0 #FAA76A;
+}
+
+.rephone_goodsList.tab_PARTS .good_list .inner .hover .hover_inner .price {
+    color: #7F3B1B
+}
+
+.rephone_goodsList.tab_PARTS .good_list .inner .hover .hover_inner .buy {
+    color: #ffe9c9
+}
+
+input[type=checkbox] {
+    width: 15px;
+    height: 15px
+}
+
+.wrap {
+    width: 100%;
+    min-height: auto;
+    margin-top: 60px;
+    overflow: initial;
+    background: 0
+}
+
+.wrap div {
+    box-sizing: border-box
+}
+
+.wrap span {
+    display: inline-block;
+    cursor: pointer
+}
+
+.wrap .m_item,
+.wrap .m_item_l {
+    display: none
+}
+
+.rephone_wrap {
+    font-size: 14px;
+    color: #575d6a
+}
+
+.rephone_wrap .nav_name i {
+    background: url(/page/img/img_a3f3da0c_rephone_index_icon.png) no-repeat
+}
+
+.rephone_wrap .m_more {
+    width: 23px;
+    height: 23px;
+    background-position: -2px -71px
+}
+
+.rephone_wrap li:hover .m_more {
+    background-position: -2px -255px
+}
+
+@media only screen and (max-width:775px) {
+    .wrap {
+        width: 100%;
+        min-height: 700px
+    }
+    .wrap .common_cover {
+        display: block
+    }
+    .global_mFooter {
+        display: block
+    }
+    .rephone_wrap {
+        width: 100%;
+        max-width: 1120px;
+        font-size: 13px
+    }
+    .rephone_wrap .rephone_banner {
+        margin-bottom: 5px
+    }
+    .rephone_wrap .hotSale_logo {
+        display: none
+    }
+    .rephone_wrap .hotSale_tips {
+        display: none
+    }
+    .rephone_wrap .hotSale_nav {
+        padding: 12px 0 8px;
+        margin-top: 1px;
+        position: relative;
+        z-index: 10
+    }
+    .rephone_wrap .hotSale_nav .nav_tips {
+        display: none
+    }
+    .rephone_wrap .hotSale_nav .nav_name {
+        font-size: 13px;
+        border-right: 1px solid #e2e5e7
+    }
+    .rephone_wrap .hotSale_nav .nav_name em {
+        display: block;
+        margin: 0 auto;
+        height: 30px
+    }
+    .rephone_wrap .hotSale_nav .nav_name a {
+        text-decoration: none;
+        color: inherit
+    }
+    .rephone_wrap .hotSale_nav .nav_name .corner {
+        position: absolute;
+        top: 39px;
+        right: 4px;
+        width: 21px;
+        height: 11px;
+        line-height: 11px;
+        font-size: 7px
+    }
+    .rephone_wrap .hotSale_nav .nav_name:nth-of-type(4) {
+        border-right: 0
+    }
+    .rephone_wrap .listNavWrap {
+        display: none
+    }
+    .rephone_wrap .listRightWrap {
+        width: 100%
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort {
+        display: block;
+        background: #fff;
+        border-top: 1px solid #e2e5e7
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mClass_title {
+        padding: 10px
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_nav {
+        padding: 10px 0;
+        border-bottom: 1px solid #e2e5e7;
+        display: -webkit-flex;
+        display: -webkit-box;
+        display: flex;
+        text-align: center
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_nav .active {
+        color: #0fae6f
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_nav .active em {
+        border-top-color: #0fae6f
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_nav span:nth-of-type(3) {
+        border-right: 0
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_nav span {
+        display: block;
+        flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        -moz-flex: 1;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        -moz-flex: 1;
+        border-right: 1px solid #e2e5e7;
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_nav span i {
+        font-style: normal
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_nav span em {
+        display: inline-block;
+        vertical-align: super;
+        border-bottom: 0;
+        border-top: 4px solid #575d6a;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_nav span .arrowactive {
+        border-top: 0;
+        border-bottom: 4px solid #575d6a
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_sort {
+        position: absolute;
+        background: #eaeaea;
+        z-index: 10;
+        width: 100%;
+        overflow: hidden;
+        text-align: center
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_sort ul li {
+        padding: 10px 0
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_sort ul .active {
+        background: #fff;
+        color: #0fae6f
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_logo,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_device,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_skutitle,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_sku {
+        position: absolute;
+        background: #eaeaea;
+        width: 50%;
+        height: 308px;
+        z-index: 10;
+        overflow: auto
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_logo ul,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_device ul,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_skutitle ul,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_sku ul {
+        padding-left: 25px
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_logo ul .active,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_device ul .active,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_skutitle ul .active,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_sku ul .active {
+        background: #fff;
+        color: #0fae6f
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_logo ul .allDevice,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_device ul .allDevice,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_skutitle ul .allDevice,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_sku ul .allDevice {
+        border-bottom: 1px solid #e2e5e7
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_logo ul li,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_device ul li,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_skutitle ul li,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_sku ul li {
+        padding: 10px 0
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_logo .ul_logo,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_device .ul_logo,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_skutitle .ul_logo,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_sku .ul_logo {
+        padding: 0
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_logo .ul_logo li,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_device .ul_logo li,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_skutitle .ul_logo li,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_sku .ul_logo li {
+        padding-left: 25px
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_device,
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .mSort_wrap_sku {
+        background: #fff;
+        right: 0
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .mhotSale_sort .mSort_wrap .sku_btn {
+        background: #0fae6f;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        top: 353px;
+        position: absolute;
+        width: 100%
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .hotSale_msg {
+        display: none
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .hotSale_sort {
+        border-bottom: 1px solid #e2e5e7;
+        margin-top: 5px;
+        padding: 10px;
+        height: auto
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .hotSale_sort .sort_hot {
+        display: none
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .hotSale_sort .sort_price {
+        display: none
+    }
+    .rephone_wrap .listRightWrap .hotSale_nav_wrap .hotSale_sort .part_tips {
+        color: #abb0bc;
+        padding: 0 10px;
+        border-left: 2px solid #0fae6f;
+        width: 100%;
+        line-height: 15px
+    }
+    .rephone_wrap .listRightWrap .hotSale_Wrap .global_page {
+        display: none
+    }
+    .rephone_wrap .listRightWrap .hotSale_Wrap .list_more_wrap {
+        display: block;
+        padding: 0 10px
+    }
+    .rephone_wrap .listRightWrap .hotSale_Wrap .list_more_wrap .list_more {
+        display: block;
+        position: relative;
+        margin: 30px 0 10px;
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        border-radius: 8px;
+        border: 1px solid #abb0bc
+    }
+    .rephone_wrap .listRightWrap .hotSale_Wrap .list_more_wrap .list_more em {
+        display: inline-block;
+        vertical-align: super;
+        border-bottom: 0;
+        border-top: 4px solid #575d6a;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent
+    }
+    .rephone_wrap .listRightWrap .hotSale_Wrap .device_box {
+        display: -webkit-flex;
+        display: -webkit-box;
+        display: flex;
+        width: 100%;
+        height: auto!important;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 10px 0 10px 10px;
+        border-right: 1px solid #e2e5e7;
+        border-bottom: 1px solid #e2e5e7
+    }
+    .rephone_wrap .listRightWrap .hotSale_Wrap .device_box:hover {
+        border-color: #e2e5e7;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -ms-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -ms-box-shadow: none;
+        -moz-box-shadow: none;
+    }
+    .rephone_wrap .listRightWrap .hotSale_Wrap .device_box .cover {
+        height: 100%;
+        top: -1px
+    }
+    .rephone_wrap .listRightWrap .hotSale_Wrap .device_box .cover .cover_inner {
+        margin: 18px auto
+    }
+    .rephone_wrap .listRightWrap .hotSale_Wrap .device_box .device_title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        float: left;
+        font-size: 15px;
+        margin: 0
+    }
+    .rephone_wrap .listRightWrap .hotSale_Wrap .device_box .device_price {
+        float: right;
+        border: 0;
+        margin: 0 10px 0 0
+    }
+    .rephone_wrap .listRightWrap .hotSale_Wrap .device_box .device_price .price {
+        font-size: 15px
+    }
+    .rephone_wrap .listRightWrap .hotSale_Wrap .device_box .sku_item {
+        float: left;
+        width: 100%;
+        padding: 10px 10px 0 0;
+        border-top: 1px solid #e2e5e7;
+        box-sizing: border-box;
+        margin: 15px 0 0;
+        height: auto
+    }
+    .rephone_wrap .listRightWrap .hotSale_Wrap .device_box .msg_wrap {
+        flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        -moz-flex: 1;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        -moz-flex: 1;
+        padding-top: 10px;
+    }
+    .rephone_wrap .listRightWrap .hotSale_Wrap .device_box .box_img {
+        height: auto;
+        display: inline-block;
+        padding: 0;
+        margin-right: 5px
+    }
+    .rephone_wrap .listRightWrap .hotSale_Wrap .device_box .box_img img {
+        display: none
+    }
+    .rephone_wrap .listRightWrap .hotSale_Wrap .device_box .box_img div {
+        display: block;
+        width: 110px;
+        height: 110px;
+        margin: 0 auto;
+        background-size: cover!important
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .rephone_wrap .device_box .device_title {
+        width: 168px
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .rephone_wrap .device_box .device_title {
+        width: 115px
+    }
+}

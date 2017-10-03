@@ -1,0 +1,139 @@
+body{
+	background: #fafcff;
+}
+/*header start*/
+header{
+	width: 100%;
+	height: 64px;
+    margin: 72px  0 105px 0;
+    // background: #444;
+}
+header .header_logo{
+	// width: 1120px;
+	height: 64px;
+	// background: #888;
+	position:relative;
+}
+header .header_logo hr{
+	// background:#e5e6e8;
+	position:absolute;
+	top:20px;
+}
+header .header_logo a{
+	text-align:center;
+	background: ;
+	width: 240px;
+    display: block;
+    background: #fafcff;
+    position: absolute;
+    left: 40%;
+}
+/*header end*/
+
+/*main start*/
+.main{
+	width: 100%;
+	padding-left:120px;
+}
+.main .main_banner{
+	width: 50%;
+	float: left;
+	padding-top:15px;
+}
+.main .main_login{
+	float: right;
+	width: 50%;
+	// background: #123123;
+	height: 300px;
+}
+.main .main_login input{
+	background-color: #fafcff;
+	width: 323px;
+	height: 14px;
+	line-height: 14px;
+	padding: 14px 18px;
+	border: 1px solid #e5e6e8;
+	border-radius: 2px;
+	font-size: 13px;
+	color: #999;
+	margin-bottom:30px;
+}
+.main .main_login .info{
+	width: 361px;
+	margin-bottom:30px;
+	font-size: 14px;
+	color: #333;
+}
+.main .main_login .info input{
+	float: left;
+	width: 16px;
+	height: 16px;
+	// background: #fff;
+}
+.main .main_login .info a{
+	float: right;
+	color:#333;
+}
+.main .main_login button{
+	border-radius: 2px;
+	background: #000;
+	color: #fff;
+	font-size: 14px;
+	width: 360px;
+	height: 43px;
+	line-height: 43px;
+	// outline: none;
+	display: block;
+	padding: 0;
+	border: none;
+	margin: 30px 0;
+	cursor: pointer;
+}
+.main .main_login p{
+	width: 360px;
+	text-align:right;
+	color:#999;
+	font-size: 14px;
+	margin-bottom:30px;
+}
+.main .main_login p a{
+	color:#333;
+}
+.main .main_login ul{
+	// width: 366px;
+	float: left;
+
+}
+.main .main_login ul li{
+	width: 25%;
+	float: left;
+}
+.main .main_login ul li a{
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin-right:37px;
+	background: url(../img/cmh_img/login_icons.png) no-repeat;
+}
+.main .main_login ul li:nth-of-type(2) a{
+	background-position: -60px 0;
+}
+.main .main_login ul li:nth-of-type(3) a{
+	background-position: -120px 0;
+}
+.main .main_login ul li:nth-of-type(4) a{
+	background-position: -180px 0;
+}
+.main .main_login ul li:nth-of-type(1) a:hover{
+	background-position:0 -60px;
+}
+.main .main_login ul li:nth-of-type(2) a:hover{
+	background-position:-60px -60px;
+}
+.main .main_login ul li:nth-of-type(3) a:hover{
+	background-position:-120px -60px;
+}
+.main .main_login ul li:nth-of-type(4) a:hover{
+	background-position:-180px -60px;
+}
+/*main end*/

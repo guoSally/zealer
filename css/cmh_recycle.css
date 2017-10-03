@@ -1,0 +1,67 @@
+
+/*header start*/
+header ul li a:hover{
+	background: #3985F3;
+	// color:#fff;
+}
+header ul li.active a p{
+	color:#3985F3;
+	// border-bottom:2px solid #F7A63D;
+}
+header ul li a:after{
+	display: none;
+	content: '';
+	position: absolute;
+	width: 20px;
+	bottom: 12px;
+	left: 50%;
+	margin-left: -10px;
+	border-bottom: 2px solid #3985F3;
+}
+/*header end*/
+
+/*box start*/
+.box{
+	// background: #f7f7f7;
+    margin-top: 60px;
+    background: url(../img/cmh_img/recycle_background.jpg) no-repeat;
+    padding-top: 80px;
+    background-size:100% auto;
+}
+.box .main_sprite{
+	box-sizing: border-box;
+    // width: 1120px;
+    // margin: 0 auto;
+    background: #fff;
+    padding:30px;
+    border-radius: 4px;
+}
+.box .main_sprite img{
+	width: 100%;
+}
+/*box end*/
+
+/*footer start*/
+footer{
+	background: #fff;
+	overflow:hidden;
+	margin:40px auto 0;
+}
+footer .footer_about{
+	margin:40px auto 0;
+	// width: 1120px;
+	overflow:hidden;
+	padding: 60px 0 50px;
+}
+
+footer .footer_about ul li:last-of-type #xinlang div{
+	display:none;
+	top:12%;
+	right:5%;
+}
+footer .footer_about ul li:last-of-type #weixin div{
+	display:none;
+	top:12%;
+	right:1%;
+}
+/*footer end*/ 

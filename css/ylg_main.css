@@ -1,0 +1,235 @@
+body{
+    1rem = 10px;
+}
+::-webkit-scrollbar{width:3px;}
+::-webkit-scrollbar-track{background-color:#0f0f12;}
+::-webkit-scrollbar-thumb{background-color:#fff;}
+::-webkit-scrollbar-thumb:hover {background-color:#fff}
+::-webkit-scrollbar-thumb:active {background-color:#fff}
+a{
+    text-decoration:none;
+}
+#header {
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    height: 6rem;
+    line-height: 6rem;
+   width: 100%;
+   z-index: 2;
+}
+#header > .container >.row >div:nth-child(2){
+    padding-left: 0.5rem;
+}
+#header > .container >.row >div a{
+     text-decoration:none;
+     margin-right: 1rem;
+     font:1.3rem/6rem "Arial";
+     color: #fff;
+}
+#header > .container >.row >div a:hover{
+    color: #0096ff;
+}
+#header > .container >.row >div:nth-child(3) >input{
+    background: #353535;
+    height: 3rem;
+    border:0;
+    outline: none;
+    border-radius: 3rem ;
+}
+
+/*banner-s*/
+#banner {
+    height: 500px;
+}
+#banner  .carousel-inner > .item {
+    height: 500px;
+    background-repeat: no-repeat;
+      background-position: center center; 
+      background-size: cover;   
+}
+ @media (max-width: 500px) {
+    #banner{
+        display: none;
+    }
+ }
+ .warp{
+   background: #ECEEF1;
+   position: relative;
+}
+.warp :hover {
+    cursor: pointer;
+}
+.warp .content {
+   width: 900px;
+   margin: 0 auto;
+   overflow: hidden;
+}
+.warp .content p {
+  line-height: 20px;
+    font-size: 21px;
+    color: #31343b;
+    font-weight: 400;
+    padding: 20px;
+    text-indent: -20px;
+}
+.content .hot {
+    width: 897px; height: 363px;
+    background: url(../img/ylg/warp1.png);
+}
+.content .secret_one {
+    width: 893px; height: 362px;
+    background: url(../img/ylg/warp2.png);
+}
+.content .secret_two {
+    margin-top:50px; 
+    width: 893px; height: 359px;
+    background: url(../img/ylg/warp3.png);
+}
+
+ footer{
+    width: 900px;
+    height: 243px;
+        background: url(../img/ylg/foot.png);
+        background-position: center center;
+}
+
+/*banner-e*/
+.sidebar{
+    width: 280px;
+    height: 431px;
+    position: absolute;
+    top: 69px;
+    left: 0;
+    margin-left: 115px;
+    background-color: #030303;
+    z-index: 1;
+}
+.sidebar .left_list{
+    width: 280px;
+    height: 430px;
+    background: rgba(0, 0, 0, 0.9);
+    padding-top: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction:column;
+}
+.left_list li {
+    flex:1;
+    /* margin-top: 10px; */
+}
+.clear .title {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    /* margin-bottom: 66px; */
+    color: #fff;
+    margin-left: 50px;
+    /* display: block; */
+}
+.clear .list_child {
+        width: 187px;
+        margin-left: 50px;
+}
+.clear .list_child a {
+        width: 110px;
+        font-size: 12px;
+        line-height: 29px;
+        margin-bottom: 12px;
+        color: #fff;
+        margin-right: 30px;
+}
+
+.clear:hover{
+     background: #0091ff;
+}
+
+.list_ul{
+    display:none;
+    position: absolute;
+    top: 0px;
+    left: 280px;
+    width: 110px;
+    height: 431px;
+    background: #0f0f12;
+    overflow-y: auto;
+    overflow-x: visible;
+    /* overflow-y: scroll; */
+    text-indent: 1em;
+}
+#js_clear:hover ul{
+    display: block;
+}
+.list_ul li { 
+    height: 30px;
+    line-height: 30px;
+}
+/*.list_ul:hover{   
+      background: #0f0f12;
+  }*/
+  .list_ul li:hover{
+      background: #0091ff;
+      cursor: pointer;
+  }
+  .return {
+    position: fixed;
+    bottom: 0;
+    right: 35px;
+    background: black;
+    width: 40px;
+    height: 40px;
+  }
+  .return:hover {
+    cursor:pointer;
+  }
+  .return:before {
+    content:'';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 2px;
+    height: 15px;
+    background: #fff;
+    transform: rotate(37deg);
+  }
+  .return:after {
+    content:'';
+    position: absolute;
+    top: 15px;
+    left: 24px;
+    width: 2px;
+    height: 15px;
+    background: #fff;
+    transform: rotate(-37deg);
+  }
+/*.list_ul .data-num-1:nth-child(1):hover .da3-1{
+      display: block;
+}*/
+
+
+
+/*
+  .da3disp {
+    display: none;
+  } 
+  .da3-1 {
+          width: 130px;
+          height: 440px;
+          position: absolute;
+          top: 0;
+          left: 110px;
+          z-index: 4;
+          background: #181A1D;
+          text-indent: 2em;
+ }
+   .da3-1 a{
+    text-decoration: none;
+      height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+   }
+      .da3-1 a:hover{
+        color: #0091ff;
+      };*/

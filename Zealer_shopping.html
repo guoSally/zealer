@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ZEALER S</title>
+    <link rel="shortcut icon" href="img/service/z.ico">
+    <meta name="keywords" content="zealer 视频 手机 王自如 测评 Techmessager">
+    <meta name="description" content="ZEALER - 独立测评机构">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.3.3.6.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.webui-popover.min.css">
+    <link rel="stylesheet" type="text/css" href="css/zealer_s.css">
+    <link rel="stylesheet" type="text/css" href="css/goodList.css">
+    <link rel="stylesheet" type="text/css" href="css/shopping.css">
+</head>
+
+<body>
+    <div class="global_header">
+        <div class="header_inner">
+            <a class="inner_logo" href="http://s.zealer.com/">
+</a>
+            <div class="fixHeader_tab">
+                <a href="http://s.zealer.com/rephone" class="tabList tab_onfocus rephone_tab">
+                    <p class="eng">STORE</p>
+                    <p class="text">享用商城</p>
+                    <span class="line"></span>
+                </a>
+                <a href="http://www.zealer.com/list?cp=12" target="_blank" class="tabList media_tab">
+                    <p class="eng">MEDIA</p>
+                    <p class="text">媒体科技</p>
+                    <span class="line"></span>
+                </a>
+                <a href="http://s.zealer.com/repair" class="tabList  repair_tab">
+                    <p class="eng">FIX</p>
+                    <p class="text">手机维修</p>
+                    <span class="line"></span>
+                </a>
+
+                <a href="http://s.zealer.com/post/127" class="tabList  repair_tab">
+                    <p class="eng">RECYCLE</p>
+                    <p class="text">手机回收</p>
+                    <span class="line"></span>
+                </a>
+                <a href="http://s.zealer.com/service/index" class="tabList  service_tab">
+                    <p class="eng">SERVICE</p>
+                    <p class="text">客户服务</p>
+                </a>
+                <div class="fixHeader_nologin nologin" style="">
+                    <a href="#" class="login_in">登录</a>
+                    <a href="#">注册</a>
+                </div>
+
+                <!-- <a class="fixCart login" href="http://s.zealer.com/cart" target="_blank" style="display: none;">
+    <span class="cart_num badge"></span>
+    </a>
+                <div class="fixHeader_login login active" style="display: none;">
+                    <a href="javascript:;" class="user_ic" data-toggle="popover" data-placement="bottom" data-content="&lt;div class=&#39;login_dropdown&#39;&gt;
+    &lt;a href=&#39;/user/rephone?t=17150&#39;&gt;个人中心&lt;/a&gt;
+    &lt;a href=&#39;/service/index&#39; target=&#39;_blank&#39;&gt;客户服务&lt;/a&gt;
+    &lt;a href=&#39;http://www.zealer.com/user/logout?redirect=http%3A%2F%2Fs.zealer.com%2Frephone?fixOut=YES&#39;&gt;退出登录&lt;/a&gt;
+    &lt;/div&gt;" data-html="true"></a> -->
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <!--div class="common_cover"
+:class="{common_cover_out: coverState == 2}"
+v-show="coverState" v-cloak>
+</div-->
+
+
+
+            
+
+            
+                <div class="page-shopping-cart" id="shopping-cart">
+                    <h4 class="cart-title">购物清单</h4>
+                    <div class="cart-product-title clearfix">
+                        <div class="td-check fl"><span class="check-span fl check-all" :class="{'check-true':isSelectAll}" @click="selectProduct(isSelectAll)"></span>全选</div>
+                        <div class="td-product fl">商品</div>
+                        <div class="td-num fl">数量</div>
+                        <div class="td-price fl">单价(元)</div>
+                        <div class="td-total fl">金额(元)</div>
+                        <div class="td-do fl">操作</div>
+                    </div>
+                    <div class="cart-product clearfix">
+                        <table>
+                            <tbody>
+                            <!--遍历的时候带上索引-->
+                            <tr v-for="(item,index) in productList">
+                                <td class="td-check"><span class="check-span" @click="item.select=!item.select" :class="{'check-true':item.select}"></span></td>
+                                <td class="td-product"><img :src="item.pro_img" width="98" height="98">
+                                    <div class="product-info">
+                                        <h6>{{item.pro_name}}</h6>
+                                        <p>品牌：{{item.pro_brand}}&nbsp;&nbsp;产地：{{item.pro_place}}</p>
+                                        <p>尺寸/类型:{{item.pro_purity}}&nbsp;&nbsp;规格：{{item.pro_min}}</p>
+                                        <p>配送仓储：{{item.pro_depot}}</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </td>
+                                <td class="td-num">
+                                    <div class="product-num">
+                                        <a href="javascript:;" class="num-reduce num-do fl" @click="item.pro_num>0?item.pro_num--:''"><span></span></a>
+                                        <input type="text" class="num-input" v-model="item.pro_num">
+                                        <a href="javascript:;" class="num-add num-do fr" @click="item.pro_num++"><span></span></a>
+                                    </div>
+                                </td>
+                                <td class="td-price">
+                                    <p class="red-text">￥<span class="price-text">{{item.pro_price.toFixed(2)}}</span></p>
+                                </td>
+                                <td class="td-total">
+                                    <p class="red-text">￥<span class="total-text">{{item.pro_price*item.pro_num}}</span>.00</p>
+                                </td>
+                                <td class="td-do"><a href="javascript:;" class="product-delect" @click="deleteOneProduct(index)">删除</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="cart-product-info">
+                        <a class="delect-product" href="javascript:;" @click="deleteProduct"><span></span>删除所选商品</a>
+                        <a class="keep-shopping" href="Zealer_S.html"><span></span>继续购物</a>
+                        <a class="btn-buy fr" href="javascript:;">去结算</a>
+                        <p class="fr product-total">￥<span>{{getTotal.totalPrice}}</span></p>
+                        <p class="fr check-num"><span>{{getTotal.totalNum}}</span>件商品总计（不含运费）：</p>
+                    </div>
+                </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="global_footer">
+
+        <div class="footer_inner">
+            <div class="footer_about clear">
+                <dl class="about_list">
+                    <img src="img/service/logo.png">
+                </dl>
+                <dl class="about_list">
+                    <dt>服务指南</dt>
+                    <dd><a href="http://s.zealer.com/service/index?tab=guide">新手指引</a></dd>
+                    <dd><a href="http://s.zealer.com/service/index?tab=guide">常见问题</a></dd>
+                    <dd><a href="http://s.zealer.com/service/index?tab=help">服务条款</a></dd>
+                </dl>
+                <dl class="about_list list_middle">
+                    <dt>售后服务</dt>
+                    <dd><a href="http://s.zealer.com/service/index?tab=serve">售后政策</a></dd>
+                    <dd><a href="http://s.zealer.com/service/index?tab=serve">售后流程</a></dd>
+                    <dd><a href="http://s.zealer.com/service/index?tab=advice">意见建议</a></dd>
+                </dl>
+                <dl class="about_list">
+                    <dt>关注我们</dt>
+                    <dd><a href="http://weibo.com/u/5217947713" target="_blank">官方微博</a></dd>
+                    <dd><a href="https://zealers.taobao.com/" target="_blank">官方淘宝</a></dd>
+                    <dd><a href="http://s.zealer.com/service/index?tab=consoult">联系我们</a></dd>
+
+                </dl>
+                <dl class="about_list list_cs">
+                    <dt></dt>
+                    <dd>
+                        <a href="http://v2.live800.com/live800/chatClient/chatbox.jsp?companyID=569459&amp;configID=125423&amp;jid=8877315441" class="cs_title"
+                            target="_blank">在线客服</a>
+                    </dd>
+                    <dd>语音客服：<span class="tel">400-900-7077</span><br>服务时间：工作日9:30-17:30</dd>
+                </dl>
+                <dl class="about_list list_QRcode">
+
+                    <div class="qr_wrap">
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <div id="qr_img_sina" style="display: none;">
+                            <img src="img/service/sina@2x.png">
+                        </div>
+                        <div id="qr_img_wx" style="display: none;">
+                            <img src="img/service/weixin@2x.png">
+                        </div>
+                    </div>
+
+
+                </dl>
+            </div>
+            <div class="inner_copyr">
+                <span class="inner_tech"></span>
+                <em>|</em>
+                <span class="inner_copy"></span>
+                <em>|</em>
+                <span class="inner_no">
+        <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">粤ICP备12076188号</a>
+        </span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="global_mFooter">
+        <div class="footer_menu">
+            <span class="ol_service"><a href="http://v2.live800.com/live800/chatClient/chatbox.jsp?companyID=569459&amp;configID=125423&amp;jid=8877315441" target="_blank"><em></em>在线客服</a></span>|
+            <span class="yy_service"><a href="tel:400-900-7077"><em></em>语音客服</a></span>
+        </div>
+        <div class="footer_tips">
+            <span class="ft_title">© 2016 ZEALER</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <span class="ft_number">粤ICP备12076188号</span>
+        </div>
+    </div>
+    <script src="js/vue.js"></script>
+    <script src="js/goodsInfo.js"></script>
+    <script src="js/shoppingcart.js"></script>
+</body>
+
+</html>
